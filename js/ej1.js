@@ -1,0 +1,1 @@
+var nombre, apellido, edad, fechaDeNacimiento, direccion;
