@@ -1,0 +1,251 @@
+/*	
+	gris claro: 		#444444
+	gris claro claro: 	#777777
+	beige:				#EFF1C7;
+	naranja: 			#FF9900;
+	gris Oscuro: 		#333333;
+	verde-limon:		#9AA636;
+
+*/
+
+
+*{
+	margin: 0;
+	padding: 0 ; 
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	color: #333;
+	text-align: justify;
+
+}
+body{
+	background: #EFF1C7 url("img/bg3.jpg") repeat;
+
+}
+a{
+	text-decoration: none;	
+}
+h1{
+	font-size:2em;
+}
+h2{
+	border-bottom: 1px dashed #ddd; 
+}
+p{
+
+}
+table, th, td {
+   border: 1px solid white;
+}
+table{
+	background: #eee;
+	margin-top: 20px;
+}
+
+thead{
+	background-color: #ddd;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+tr{
+	border-bottom: 1px dashed #ddd;
+}
+tr:hover{
+	background-color: #333; 
+	color: #f60;
+}
+td{
+	color: #999;
+	padding: 10px;
+}
+td:hover{
+	background-color: #9AA636; 
+
+}
+
+
+
+
+#contenedor{
+	background-color: #fff;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*·························	TOP··························*/
+
+#top{
+	background-color: #333333;
+	height: 60px;
+	display: block;
+}
+#top h1{
+	display: inline;
+	padding-left: 65px;
+	line-height: 60px;
+	vertical-align: middle;
+}
+#top h1 a{
+	color: #9AA636;
+	font-size: 40px;
+	font-family: Ubuntu, Roboto, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#menu{
+	background-color: #333333;
+	display: inline;
+	margin-right: 65px;
+	float: right;
+	line-height: 60px;
+}
+ul#menu  li{
+	float: left;
+	padding-left: 20px;
+	list-style-type: none;
+
+
+}
+
+ul li a{
+	color: #999;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+ul li a:hover{
+	color: #9AA636;
+}
+
+#contenedor-home{
+	background-color: #fff;
+}
+
+/*	····················· Lateral ······················*/
+#lateral{
+	width: 30%;
+	float: right;
+	border-left: 1px dashed #eee;
+	padding-top: 5%;
+	padding-right: 5%;
+	vertical-align: center;
+}
+.presentacion{
+	margin: 0 auto;
+	width: 100%;
+	padding: 30px;
+	background-color: #ddd;
+
+	color: #FF9900;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.presentacion h2{
+	margin-bottom: 10px;
+	color: #f60;
+}
+
+
+.publicidad{
+	width: 100%;
+}
+.publicidad img{
+	margin-left: 100px;
+}
+
+
+
+
+
+
+/*	····················· Principal ······················*/
+.destacados{
+
+	width: 60%;
+	background-color: #fff;
+	padding: 2%;
+	margin-bottom: 50px;
+	overflow: hidden; 
+	
+}
+.bloques{
+	background-color: white;
+	padding: 30px;
+	width: 40%;
+	float: left;
+	overflow: hidden;
+}
+.bloques:hover{
+	background-color: #ddd;
+}
+
+.bloques img{
+	width: 100%;
+
+}
+
+
+
+
+footer {
+	height: 100px;
+	background-color: #333;
+	color: 
+}
+
+footer ul li{
+	float: left;
+	list-style-type: none;
+	width: 16.6%;
+	text-align: center;
+	line-height: 100px;
+
+}
+footer ul li a{
+	font-size: 0.75em;
+}
+footer ul li:hover{
+	background-color: #444;
+}
+
+
+
+/*····················Extras···················*/
+.clear-both{
+	clear: both;
+}
+
+/*···················· About ···················*/
+#about{
+	min-height: 100%;
+	width: 70%;
+	padding: 2%;
+}
+#about p{
+	margin-top: 20px;
+}
+dl{
+	padding-left: 20px;
+}
+dt{
+	margin-top: 20px;
+	color: orange;
+}
+dd{
+	color: #999;
+}
+
+/*···················· Eventos ···················*/
+
+#contenedor-eventos{
+	background-color: #fff;
+	width: 90%;
+	margin: 0 auto;
+	min-height: 600px;
+}
+#eventos{
+	
+	width: 90%;
+	padding: 2%;
+}
