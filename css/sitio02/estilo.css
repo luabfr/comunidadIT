@@ -38,20 +38,27 @@ h4{
 p{
 
 }
-
-
-
-
-
-#contenedor{
+/*···················· Secciones ···················*/
+#contenedor, #contenedor-eventos, #contenedor-noticias, #contenedor-makers, #contenedor-talleres{
 	background-color: #fff;
+	padding-top: 50px;
 	width: 90%;
 	margin: 0 auto;
+	min-height: 600px;
+}
+#about, #eventos, #noticias, #makers, #talleres{
+	width: 90%;
+	padding: 2%;
+	overflow: hidden;
 }
 
-/*·························	TOP··························*/
+
+
+/*·························	NAV  ··························*/
 
 #top{
+	width: 100%;
+	position: fixed;
 	background-color: #333333;
 	height: 60px;
 	display: block;
@@ -80,8 +87,6 @@ ul#menu  li{
 	float: left;
 	padding-left: 20px;
 	list-style-type: none;
-
-
 }
 
 ul li a{
@@ -93,9 +98,6 @@ ul li a:hover{
 	color: #9AA636;
 }
 
-#contenedor-home{
-	background-color: #fff;
-}
 
 /*	····················· Lateral ······················*/
 #lateral{
@@ -225,18 +227,6 @@ td:hover{
 
 }
 
-/*···················· Secciones ···················*/
-#contenedor-eventos, #contenedor-noticias, #contenedor-makers, #contenedor-talleres{
-	background-color: #fff;
-	width: 90%;
-	margin: 0 auto;
-	min-height: 600px;
-}
-#about, #eventos, #noticias, #makers, #talleres{
-	width: 90%;
-	padding: 2%;
-	overflow: hidden;
-}
 
 
 /*···················· About ···················*/
@@ -274,7 +264,6 @@ figcaption{
 	color: #ddd;
 	font-size: 12px;
 	background-color: #f60;
-	position: relative;
 	top: -50px;
 	padding: 5px;
 }
