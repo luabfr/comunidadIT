@@ -26,42 +26,19 @@ a{
 }
 h1{
 	font-size:2em;
+	margin-bottom: 20px;
 }
 h2{
 	border-bottom: 1px dashed #ddd; 
+	margin-bottom: 20px;
+}
+h4{
+	margin-bottom: 20px;
 }
 p{
 
 }
-table, th, td {
-   border: 1px solid white;
-}
-table{
-	background: #eee;
-	margin-top: 20px;
-}
 
-thead{
-	background-color: #ddd;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-tr{
-	border-bottom: 1px dashed #ddd;
-}
-tr:hover{
-	background-color: #333; 
-	color: #f60;
-}
-td{
-	color: #999;
-	padding: 10px;
-}
-td:hover{
-	background-color: #9AA636; 
-
-}
 
 
 
@@ -216,12 +193,53 @@ footer ul li:hover{
 	clear: both;
 }
 
-/*···················· About ···················*/
-#about{
-	min-height: 100%;
-	width: 70%;
-	padding: 2%;
+
+/*···················· Tablas ···················*/
+table, th, td {
+   border: 1px solid white;
 }
+table{
+	background: #eee;
+	margin-top: 20px;
+}
+
+thead{
+	background-color: #ddd;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+tr{
+	border-bottom: 1px dashed #ddd;
+}
+tr:hover{
+	background-color: #333; 
+	color: #f60;
+}
+td{
+	color: #999;
+	padding: 10px;
+}
+td:hover{
+	background-color: #9AA636; 
+
+}
+
+/*···················· Secciones ···················*/
+#contenedor-eventos, #contenedor-noticias, #contenedor-makers, #contenedor-talleres{
+	background-color: #fff;
+	width: 90%;
+	margin: 0 auto;
+	min-height: 600px;
+}
+#about, #eventos, #noticias, #makers, #talleres{
+	width: 90%;
+	padding: 2%;
+	overflow: hidden;
+}
+
+
+/*···················· About ···················*/
 #about p{
 	margin-top: 20px;
 }
@@ -236,16 +254,87 @@ dd{
 	color: #999;
 }
 
-/*···················· Eventos ···················*/
 
-#contenedor-eventos{
-	background-color: #fff;
-	width: 90%;
-	margin: 0 auto;
-	min-height: 600px;
+/*···················· makers ···················*/
+
+figure{
+	max-width: 300px;
+	display: inline-block;
+	overflow: hidden;
+	float: left;
+	margin: 2%;
+
+	border-top: 1px dashed #ddd;
+	padding-top: 10px;
 }
-#eventos{
+figure:hover{
+	background-color: #ddd;
+}
+figcaption{
+	color: #ddd;
+	font-size: 12px;
+	background-color: #f60;
+	position: relative;
+	top: -50px;
+	padding: 5px;
+}
+figcaption:hover{
+	background-color: #444;
+}
+
+.aporte-maker h4{
+	color: #444;
+	font-size:1em; 
+}
+
+/*···················· noticias ···················*/
+#noticias{
+	width: 60%;
+}
+#noticias article{
+	padding: 20px;
+	border-bottom: 2px dashed #666;
+	margin-bottom: 50px;
+}
+#noticias article p{
+	margin-bottom: 20px;
+}
+#noticias img{
 	
-	width: 90%;
-	padding: 2%;
+	margin: 50px 200px;
+	
+}
+
+/*···················· Talleres ···················*/
+#talleres{
+	width: 60%;
+}
+#talleres table{
+	overflow: scroll
+	margin-bottom: 100px;
+
+}
+#talleres ul{
+	background-color: gray;
+	border: 1px solid #333;
+}
+#talleres ul li{
+	text-align: right;
+	list-style: none;
+	line-height: 30px;
+}
+#talleres ol{
+	background-color: white;
+	overflow: hidden;
+}
+#talleres ol li{
+	text-align: right;
+	min-width: 10%;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+#talleres-por-anio{
+	position: fixed;
+	width: 30%;
+	right: 100px;
 }
