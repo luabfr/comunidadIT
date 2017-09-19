@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS en Browser</title>
+
+	<script>
+		alert('PROMEDIAR');
+		let num = 0;
+		let suma = 0;
+		let prom = 0;
+		let cont = 0;
+
+		do	{
+			num = parseInt(  prompt('ingresa un NUM'));
+			suma += num ;
+			cont++;
+
+			console.log('suma: ' + suma );
+
+			prom = suma / cont ;
+			console.log('promedio: ' + prom );
+
+		}while( confirm('seguir?') )
+
+
+	</script>
+</head>
+<body>
+
+
+Copiar y pegar el código del ejercicio anterior
+Refactorizar el código para mostrar el promedio entre los valores ingresados luego de mostrar el resultado parcial de la suma.
+
+</body>
+</html>

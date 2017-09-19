@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elementos</title>
+  <style>
+    .rojo {
+      color: red;
+    }
+    .verde {
+      color: green;
+    }
+    .naranja {
+      color: orange;
+    }
+  </style>
+  <script>
+  		window.onload = function () {
+			let ul = document.querySelector('ul');  			
+			console.log( ul.children );
+
+			let segundo_hijo = ul.children[1]
+			segundo_hijo.setAttribute('class', 'verde');
+			let cuarto_hijo = ul.children[3]
+			cuarto_hijo.setAttribute('class', 'rojo');
+
+			console.log(cuarto_hijo.parentElement);
+
+			cuarto_hijo.parentElement.setAttribute('class', 'naranja');
+  		}
+  </script>
+<!-- 
+	- Seleccionar el elemento ul
+	- Mostrar en la consola los elemento hijos del elemento ul
+	- Seleccionar el 2 elemento hijo y guardarlo en una variable
+	agregar la clase verde
+	-Seleccionar el 4 elemento hijo y guardarlo en una variable
+	agregar la clase rojo
+	Utilizar el hijo 2 o 4 para mostrar en consola quien es su elemento padre
+	Utilizando uno de los hijos obtener una referencia al elemento padre y agregarle la clase naranja
+-->
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+</body>
+</html>

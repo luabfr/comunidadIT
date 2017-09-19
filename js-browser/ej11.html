@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS en Browser</title>
+
+	<script>
+	let name = prompt('ingrea nombre');
+	let pass = prompt('ingresa pass');
+	let seguir;
+	alert(`Bienvenido ${name}`);
+
+	setTimeout( function(){
+		if( confirm('seguir logueado?') ){
+
+			alert(`${name} renovamos tu sesion`)
+
+		}else{
+			alert(`${name} ha caducado su sesión por favor vuelva a ingresar`);
+		}
+	}, 10000 );
+
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

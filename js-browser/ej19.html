@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Establecer Atributos</title>
+  <style>
+    .negrita {
+      font-weight: bold;
+    }
+    .tachado {
+      text-decoration: line-through;
+    }
+  </style>
+  <script>
+  		window.onload = function () {
+  			let h1 = document.querySelector('h1');
+  			let div = document.querySelector('div');
+
+  			if( h1.hasAttributes() ){
+  				h1.setAttribute('class', 'tachado');
+  			}else{
+  				h1.setAttribute('class', 'negrita');
+  			}
+
+  			if( div.hasAttributes() ){
+  				div.setAttribute('class', 'tachado');
+  			}else{
+  				div.setAttribute('class', 'negrita');
+  			}
+
+  		}	
+  </script>
+
+</head>
+<!-- Agregar la etiqueta script
+Seleccionar el elemento h1
+Seleccionar el elemento div
+Si alguno de los dos elementos tiene atributos entonces
+Agregar la clase tachado
+Sino
+Agregar la clase negrita
+ -->
+<body>
+  <h1 id="principal">Jugando con atributos</h1>
+  <div>De a poco vamos teniendo control sobre nuestros documentos!!!</div>
+</body>
+</html>

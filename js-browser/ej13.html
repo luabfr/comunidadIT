@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS en Browser</title>
+
+	<script>
+	let cant = parseInt(prompt(' cantidad de segundos que quiere ver'));
+
+
+	let cont = 0;
+
+	let miID = setInterval( function(){
+		cont++ ;	
+
+		if ( cont == cant ){
+			clearInterval( miID );
+			alert('la cortamos aca');
+		}
+
+		console.log( cont );
+	}, 1000 );
+
+	</script>
+</head>
+<body>
+
+Pedir al usuario que ingrese la cantidad de segundos que quiere ver nuestro documento
+Mostrar en consola los segundos que pasaron desde que el usuario ingresó al sistema hasta llegar a la cantidad de segundos ingresados como preferencia del usuario
+Al terminar la session mostrar un alerta con el siguiente mensaje:
+'ha caducado su sesión por favor vuelva a ingresar'
+
+
+</body>
+</html>
