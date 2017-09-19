@@ -20,10 +20,9 @@ var mutantes= [
 	'Ororo Monroe'
 ];
 
-mutantes.forEach( function( mutante_X ) {
+mutantes.forEach( function( mutante_X , indice) {
 
-	console.log('indice: ' + mutantes.indexOf( mutante_X ) );
-	console.log( mutante_X );
+	console.log( indice , mutante_X );
 
 });
 
