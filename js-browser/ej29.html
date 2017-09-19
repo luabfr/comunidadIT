@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prductos</title>
+
+	<script>
+		window.onload = function(){
+			let ul = document.querySelector('ul');
+			let elementos = ul.children;
+			console.log(elementos.length);
+
+
+			for(let i = elementos.length ; i > 0  ; i-- ){
+
+				ul.removeChild(elementos[ i-1 ]);
+			}
+
+		}
+
+	</script>
+
+<!-- 
+Seleccionar cada uno de los elementos y guardarlos en una variable
+// Acordate que children nos da una referencia a los hijos de un elemento
+// Podemos utilizar item y un índice para acceder a cada uno de ellos
+ul.children.item(indice)
+Eliminar cada uno de los elementos utilizando el método removeChild
+
+ -->
+  </head>
+  <body>
+    <ul>
+      <li>Bananas</li>
+      <li>Manzanas</li>
+      <li>Peras</li>
+      <li>Huevos</li>
+      <li>Tomates</li>
+      <li>Lechuga</li>
+      <li>Leche</li>
+    </ul>
+  </body>
+</html>

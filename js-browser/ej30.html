@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prductos</title>
+
+	<script>
+		window.onload = function(){
+			let ul = document.querySelector('ul');
+			let elementos = ul.children;
+			console.log(elementos.length);
+
+
+			for(let i = elementos.length ; i > 0  ; i-- ){
+
+				ul.removeChild(elementos[ i-1 ]);
+			}
+
+		}
+
+	</script>
+
+<!-- 
+Remover cada uno de los elementos li de la lista desde atras hacia adelante y utilizar la estructura de repetición for
+
+ -->
+  </head>
+  <body>
+    <ul>
+      <li>Bananas</li>
+      <li>Manzanas</li>
+      <li>Peras</li>
+      <li>Huevos</li>
+      <li>Tomates</li>
+      <li>Lechuga</li>
+      <li>Leche</li>
+    </ul>
+  </body>
+</html>

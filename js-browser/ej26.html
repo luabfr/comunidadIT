@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo ECMAScript Baby!!</title>
+
+<script>
+	window.onload = function () {
+		let body = document.querySelector('body');
+		let ul = document.createElement('ul');
+
+		let nombres = [ 'luc', 'abel' , 'ana' , 'ariel' , 'vegetal'];
+
+		nombres.forEach( function(nombre) {
+
+			let li = document.createElement('li');
+			li.innerText = nombre ;
+			ul.appendChild( li );
+
+		});
+
+		body.appendChild(ul);
+
+	}
+</script>
+
+</head>
+<!-- 
+Seleccionar el elemento body
+Crear un array con 10 nombres
+Crear un elemento ul
+Recorrer el array nombres y por cada uno crear un elemento li y asignar el texto correspondiente
+Ir insertando cada elemento li dentro de la lista ul
+Insertar el elemento ul dentro del body
+ -->
+<body>
+</body>
+</html>

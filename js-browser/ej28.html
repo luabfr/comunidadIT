@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo ECMAScript Baby!!</title>
+
+<script>
+	window.onload = function () {
+		let body = document.querySelector('body');
+		let ul = document.createElement('ul');
+		let cont = 0;
+		let nuevoNombre;
+		let li = [];
+
+		while( confirm('Quiere ingresar un nombre??') ){
+			nuevoNombre = prompt('nuevo nombre'); 
+			cont++;
+
+			li[ cont ] = document.createElement('li');
+			li[ cont ].innerText = nuevoNombre;
+
+			cont % 2 == 0 ? li[ cont ].style.color = '#ddd' :  li[ cont ].style.color = '#eee' ;
+
+			ul.appendChild( li[ cont ] );
+		}
+		body.appendChild(ul);
+
+
+
+	}
+</script>
+
+</head>
+<!-- 
+
+	Repetir mientras el usuario confirme:
+	Mostrar al usuario un confirm con el siguiente mensaje: 'Quiere ingresar un nombre?'
+
+	Si el usuario confirma la acción entonces:
+		Le damos la opción que ingrese un nombre utilizando prompt
+		Creamos un elemento de lista li y le asignamos el valor que ingresa el usuario
+
+	Si el número de item es par entonces le asignamos un color #ddd
+	Si el número de item es inpar entonces le asignamos un color #eee
+
+	Insertamos el elemento li dentro de la lista ul
+	Al finalizar insertamos la lista ul en el elemento body
+
+ -->
+<body>
+</body>
+</html>

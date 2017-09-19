@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo ECMAScript Baby!!</title>
+
+<script>
+	window.onload = function () {
+		let body = document.querySelector('body');
+		let ul = document.createElement('ul');
+
+		let miArray = [];
+
+		for(let i = 1 ; i <= 100 ; i++ ){
+			miArray[ i ] =  i ;
+			miArray[ i ] = document.createElement('li');
+			miArray[ i ].innerText = `Item ${i}`;
+
+			if( i % 2 == 0){
+				miArray[ i ].style.color = '#ddd';
+
+			}else{
+				miArray[ i ].style.color = '#eee';
+			}
+
+			ul.appendChild( miArray[i] );
+
+		}
+		body.appendChild(ul);
+
+
+
+	}
+</script>
+
+</head>
+<!-- 
+	Seleccionar el elemento body
+	Crear un array con números del 1 al 100
+	Crear un elemento ul
+	Recorrer el array de números y por cada uno crear un elemento li y asignar el texto Item ${numero}
+	Si el número es par entonces
+		Agregar al elemento li el estilo color: #ddd
+	Sino
+		Agregar al elemento li el estilo color: #eee
+	
+	Ir insertando cada elemento li dentro de la lista ul
+	Insertar el elemento ul dentro del body
+
+ -->
+<body>
+</body>
+</html>
