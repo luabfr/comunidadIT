@@ -1,0 +1,15 @@
+{
+  "name": "ej10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ej10.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ej10.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
