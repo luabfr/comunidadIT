@@ -1,0 +1,97 @@
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+    background: rgba(0,0,0,0.8);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li:first-child {
+    margin-right: 10px;
+  }
+  
+  nav ul li img {
+    vertical-align: middle;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+  }
+  
+  section {
+    padding-left: 20px;
+  }
+  
+  footer {
+    padding-left: 20px;
+    margin-top: 100px;
+    font-size: 12px;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  
+  }
+  
+  form div label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  form input {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  form select {
+    width: 215px;
+    height: 20px;
+  }
+  
+  form textarea {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  form input[type=submit] {
+    width: 100px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    min-width: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+  }
