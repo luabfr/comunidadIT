@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mi primer app con templates</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/script.js"></script>
+</head>
+<body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">
+            <img src="img/logo.svg" alt="apple">
+          </a>
+        </li>
+        <li>
+          <a href="/products">Products</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      {{{body}}}
+    </section>
+    <footer>
+      <div>Copyright © 2017 Apple Inc. All rights reserved.</div>
+    </footer>
+</body>
+</html>

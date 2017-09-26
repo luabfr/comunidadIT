@@ -1,0 +1,9 @@
+10  OK
+11  OK
+12  OK
+13  OK
+14  Ok
+15  OK
+16  Ok
+17 -ejemplo : No es el ejercicio que pide Nico. Es el ejemplo que muestra en la explicacion
+18  OK
